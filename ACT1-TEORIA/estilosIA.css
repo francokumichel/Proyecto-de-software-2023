@@ -1,0 +1,259 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif; /* Fuente de letra */
+    background-color: #f7f7f7; /* Fondo suave */
+    color: #333; /* Texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333; /* Fondo de la barra de navegación */
+    color: white; /* Texto de la barra de navegación */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #333; /* Color de enlaces */
+    text-decoration: none;
+}
+
+/* Cambia el color de enlaces al pasar el cursor sobre ellos */
+a:hover {
+    color: #ffcc00; /* Color de enlaces al pasar el cursor */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 6%;
+    max-height: 12%;
+}
+
+nav li {
+    text-align: center;
+    margin: 10px 0; /* Agregamos margen superior e inferior */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos para la sección de cursos */
+#categoria {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas de cursos */
+#cursos h1 {
+    margin-left: 20px; /* Ajusta la cantidad de margen izquierdo según tu preferencia */
+}
+
+/* Estilos para los elementos <details> */
+details {
+    margin-left: 20px; /* Ajusta la cantidad de margen izquierdo según tu preferencia */
+}
+
+summary {
+    font-size: 1.5em; /* Ajusta el tamaño del texto como desees */
+    font-weight: bold; /* Opcional: hacer el texto en negrita */
+    cursor: pointer; /* Cambia el cursor al estilo de mano para indicar que es interactivo */
+    margin-bottom: 40px;
+}
+
+.card-grid {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px; /* Agregamos espacio en los costados izquierdo y derecho */
+}
+
+
+.curso-card {
+    border: 2px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box; 
+    margin-bottom: 40px; /* Agregamos margen inferior para separar las tarjetas */
+}
+
+.curso-card a {
+    text-decoration: none;
+}
+
+/* Estilos adicionales para el diseño responsivo (se mantienen iguales) */
+@media (max-width: 767px) {
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto; /* Centramos horizontalmente */
+    max-width: 600px; /* Establecemos un ancho máximo */
+    width: 80%; /* Establecemos un ancho relativo */
+    margin-bottom: 20px; /* Agregamos margen inferior para separar las tarjetas */
+}
+
+#contacto h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    text-align: left; /* Aliniamos el texto a la izquierda dentro del formulario */
+    max-width: 400px; /* Establecemos un ancho máximo para el formulario */
+    margin: 0 auto; /* Centramos el formulario horizontalmente */
+}
+
+#contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Añadimos bordes redondeados a los campos */
+}
+
+#contacto button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilos para la sección de información */
+#informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el enlace "¡Contáctenos!" */
+#contact-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cambia el color del enlace al pasar el cursor sobre él */
+#contact-link:hover {
+    color: #ffcc00; /* Cambia el color al que prefieras */
+}
+
+/* Estilos para el pie de página si es necesario */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos generales para dispositivos móviles (pequeños) */
+@media (max-width: 767px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente base para dispositivos móviles */
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px; /* Tamaño de fuente para tablets */
+    }
+}
+
+/* Estilos para laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    body {
+        font-size: 20px; /* Tamaño de fuente para laptops */
+    }
+}
+
+/* Estilos para dispositivos de pantalla más grande (mayor que laptops) */
+@media (min-width: 1440px) {
+    body {
+        font-size: 22px; /* Tamaño de fuente para pantallas grandes */
+    }
+}
+
+/* Estilos para el formulario en pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 767px) {
+    /* Cambia la alineación de etiquetas y campos a vertical */
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    /* Utiliza porcentajes para ajustar el ancho de los campos de entrada */
+    #contacto input[type="text"],
+    #contacto input[type="email"],
+    #contacto input[type="tel"],
+    #contacto textarea {
+        width: 90%; /* Puedes ajustar este valor según tus necesidades */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    /* Ajusta el tamaño del botón */
+    input[type="submit"] {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}

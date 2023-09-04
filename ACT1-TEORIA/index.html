@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Cursos de la Institución X</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <details>
+            <summary>ACTIVIDAD 1 - PROYECTO DE SOFTWARE</summary>
+            <p>Acá podes encontrar la consigna de la Actividad 1: <a href="enlace_al_video.mp4" target="_blank">Ver consignas</a></p>
+            <p>Para ver el video generado, hace clic en el siguiente enlace: <a href="enlace_al_video.mp4" target="_blank">Ver Video</a></p>
+        </details>
+    </section>
+
+    <section id="cursos">
+        <h1>Catálogo de Cursos</h1>
+    
+        <details open>
+            <summary>Inglés</summary>
+            <div id="cursos-container" class="card-grid">
+                <!-- Tarjetas de cursos de inglés -->
+                <div class="curso-card" data-categoria="ingles">
+                    <h2>Inglés Inicial</h2>
+                    <a href="programas/ingles_inicial.pdf" target="_blank">Programa del Curso</a>
+                </div>
+                <div class="curso-card" data-categoria="ingles">
+                    <h2>Inglés Intermedio</h2>
+                    <a href="programas/ingles_intermedio.pdf" target="_blank">Programa del Curso</a>
+                </div>
+        
+                <div class="curso-card" data-categoria="ingles">
+                    <h2>Inglés Avanzado</h2>
+                    <a href="programas/ingles_avanzado.pdf" target="_blank">Programa del Curso</a>
+                </div>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Francés</summary>
+            <div id="cursos-container" class="card-grid">
+                <!-- Tarjetas de cursos de francés -->
+                <div class="curso-card" data-categoria="frances">
+                    <h2>Francés Inicial</h2>
+                    <a href="programas/frances_inicial.pdf" target="_blank">Programa del Curso</a>
+                </div>
+    
+                <div class="curso-card" data-categoria="frances">
+                    <h2>Francés Intermedio</h2>
+                    <a href="programas/frances_intermedio.pdf" target="_blank">Programa del Curso</a>
+                </div>
+        
+                <div class="curso-card" data-categoria="frances">
+                    <h2>Francés Avanzado</h2>
+                    <a href="programas/frances_avanzado.pdf" target="_blank">Programa del Curso</a>
+                </div>
+            </div>
+    
+            </div>
+        </details>
+    </section>
+
+    <section id="informacion">
+        <div class="info-container">
+            <p>
+                Somos <strong>XYZ Software</strong>, una empresa líder en el desarrollo de soluciones de software innovadoras y de vanguardia. 
+                Nuestra misión es simplificar la vida de las personas y las organizaciones a través de tecnología de vanguardia y 
+                soluciones digitales de alta calidad.
+            </p>
+            <p>
+                En XYZ Software, nos apasiona la creación de software que resuelve problemas reales y mejora la eficiencia en 
+                diversos sectores, desde la industria hasta la educación y más allá. Nuestro equipo de expertos en desarrollo 
+                trabaja incansablemente para ofrecer productos y servicios que impulsan la transformación digital y la innovación.
+            </p>
+            <p>
+                Estamos comprometidos con la <strong>excelencia</strong>, la <strong>integridad</strong> y la <strong>satisfacción del cliente</strong>. Valoramos la colaboración 
+                y el aprendizaje continuo, y estamos orgullosos de ser un socio confiable para empresas de todos los tamaños.
+            </p>
+            <p>
+                Si desea obtener más información sobre nosotros o nuestras soluciones de software, no dude en ponerse en contacto 
+                con nuestro equipo. Estamos aquí para ayudarle a alcanzar sus objetivos tecnológicos. <a id="contact-link" href="#contacto">¡Contáctenos!</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h1>Contacto</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required minlength="10" maxlength="500"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; desarrollado por XYZ Software
+    </footer>
+</body>
+</html>
